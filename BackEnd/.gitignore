@@ -1,0 +1,74 @@
+# =====================
+# ☕ Java / Maven / Spring Boot
+# =====================
+
+# Maven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+mvnw
+mvnw.cmd
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# VS Code
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs e arquivos temporários
+*.log
+logs/
+*.tmp
+*.bak
+
+# Arquivos de ambiente
+.env
+*.env
+application.properties
+application.yml
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+security/
+
+# Banco de dados
+*.mv.db
+*.h2.db
+
+# Token e cache
+.cache/
+*.class
+
+# Uploads temporários
+/uploads
+
+
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+
