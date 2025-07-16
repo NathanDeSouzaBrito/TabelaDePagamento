@@ -22,4 +22,9 @@ public class UserService {
     public User findByUsername(String username) {
         return userRepository.findByUsername(username).orElse(null);
     }
+    
+    public boolean authenticate(String username, String rawPassword) {
+        var user = userRepository.findByUsername(username);
+        return user.isPresent() && new BCryptPasswordEncoder().matches(rawPassword, user.get().getPassword());
+    }
 }
