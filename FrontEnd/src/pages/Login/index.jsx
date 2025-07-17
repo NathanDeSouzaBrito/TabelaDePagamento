@@ -1,10 +1,12 @@
-// src/pages/LoginPage.jsx
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import "./Login.css";
+import "./style.css";
 
 const LoginPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -24,7 +26,7 @@ const LoginPage = () => {
       const data = await res.json();
       localStorage.setItem("token", data.token);
       alert("Login realizado com sucesso!");
-      // redirecionar para a próxima página
+      navigate("/dashboard");
     } catch (err) {
       alert(err.message);
     }
